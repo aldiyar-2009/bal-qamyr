@@ -442,21 +442,55 @@ h1, h2, h3, p { margin: 0; }
 }
 
 /* ---------- меню кафе ---------- */
-.dishes { padding: 40px 0 100px; }
-.dishes__group + .dishes__group { margin-top: 72px; }
-.dishes__title { font-family: var(--poster); font-weight: 700; text-transform: uppercase; font-size: clamp(40px, 10vw, 64px); line-height: 1; color: var(--terracotta); padding-bottom: 14px; border-bottom: 2px solid var(--ink); }
-.dishes__list { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 26px; align-items: start; }
-.dish { display: flex; flex-direction: column; background: var(--paper); border: 2px solid var(--ink); border-radius: 28px; box-shadow: 0 6px 0 var(--ink); overflow: hidden; animation: pop .5s var(--ease) both; animation-delay: var(--d, 0s); }
-.dish__img { display: grid; place-items: center; padding: 26px 22px 6px; }
-.dish__img img { width: 100%; max-width: 380px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 50%; border: 5px solid var(--terracotta); padding: 7px; background: var(--paper); box-shadow: 0 16px 26px rgba(43, 20, 16, .18); }
-.dish__body { display: grid; gap: 10px; padding: 20px 24px 26px; justify-items: start; }
-.dish--text .dish__body { padding-top: 26px; }
-.dish__name { font-family: var(--poster); font-weight: 600; font-size: 28px; line-height: 1.1; text-transform: uppercase; }
-.dish__desc { font-size: 17px; line-height: 1.5; color: var(--ink-soft); }
-.dish__price { margin-top: 6px; font-family: var(--poster); font-weight: 600; font-size: 24px; white-space: nowrap; padding: 6px 20px; border-radius: 999px; background: var(--yolk); }
-.dishes__notes { margin-top: 72px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
-.dishes__notes p { padding: 22px 24px; border: 2px dashed var(--ink); border-radius: 24px; font-family: var(--script); font-size: 30px; line-height: 1.1; }
-.dishes__notes p b { display: block; font-family: var(--poster); font-size: 36px; color: var(--terracotta); }
-@media (min-width: 700px) { .dishes__list { grid-template-columns: repeat(2, 1fr); gap: 30px 26px; } }
-@media (min-width: 1080px) { .dishes__list { grid-template-columns: repeat(3, 1fr); } }
+.dishes { padding: 36px 0 150px; }
+.dishes__group + .dishes__group { margin-top: 60px; }
+.dishes__title { font-family: var(--poster); font-weight: 700; text-transform: uppercase; font-size: clamp(36px, 9vw, 60px); line-height: 1; color: var(--terracotta); }
+.dishes__list { list-style: none; margin: 22px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 16px; align-items: start; }
+.dish { position: relative; animation: pop .5s var(--ease) both; animation-delay: var(--d, 0s); }
+.dish__open { display: grid; gap: 4px; width: 100%; padding: 0; border: 0; background: none; text-align: left; color: inherit; font: inherit; cursor: pointer; }
+.dish__pic { display: grid; place-items: center; aspect-ratio: 1; border-radius: 28px; background: #f3e3cb; overflow: hidden; margin-bottom: 8px; transition: transform .35s var(--ease); }
+.dish__open:hover .dish__pic { transform: translateY(-4px); }
+.dish__open:focus-visible .dish__pic { outline: 3px solid var(--terracotta); outline-offset: 3px; }
+.dish__pic img { width: 92%; height: 92%; object-fit: contain; filter: drop-shadow(0 12px 14px rgba(43, 20, 16, .28)); }
+.dish__pic img.is-logo { width: 46%; height: 46%; opacity: .32; filter: none; border-radius: 50%; }
+.dish__price { font-family: var(--poster); font-weight: 600; font-size: 25px; line-height: 1.1; }
+.dish__name { font-weight: 600; font-size: 17px; line-height: 1.3; }
+.dish__desc { font-size: 14px; line-height: 1.4; color: var(--ink-soft); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.dish__add { position: absolute; right: 10px; top: 0; margin-top: calc(100% - 64px); width: 54px; height: 54px; border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); font-family: var(--poster); font-size: 30px; font-weight: 500; line-height: 1; display: grid; place-items: center; box-shadow: 0 3px 0 var(--ink); cursor: pointer; transition: transform .2s var(--ease); }
+.dish__add:active { transform: scale(.9); }
+.dish__add.is-on { background: var(--orange); color: #fff; font-size: 24px; font-weight: 600; }
+.dish__pic--big { margin: 0; border-radius: 0; min-height: 280px; height: 100%; }
+.dish__pic--mini { width: 58px; flex: none; border-radius: 16px; margin: 0; }
+.dish-buy { margin-top: 26px; display: flex; gap: 12px; align-items: stretch; }
+.dish-buy .btn { margin-top: 0; flex: 1; width: auto; }
+.qty { display: inline-flex; align-items: center; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); flex: none; }
+.qty button { width: 44px; height: 44px; border: 0; background: none; font-size: 24px; line-height: 1; color: var(--ink); cursor: pointer; border-radius: 50%; }
+.qty b { min-width: 24px; text-align: center; font-family: var(--poster); font-size: 20px; }
+.qty--big button { width: 50px; height: 52px; }
+.cart-bar { position: fixed; z-index: 60; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%); width: min(520px, calc(100% - 32px)); height: 62px; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 2px solid var(--ink); border-radius: 999px; background: var(--orange); color: #fff; font-weight: 600; font-size: 18px; box-shadow: 0 5px 0 var(--ink); cursor: pointer; }
+.cart-bar[hidden] { display: none; }
+.cart-bar b { font-family: var(--poster); font-size: 23px; }
+.sheet--cart .sheet__box { display: block; }
+.cart__body { padding: 26px 22px 34px; }
+.cart__body h2 { font-family: var(--poster); font-weight: 700; font-size: 38px; line-height: 1; text-transform: uppercase; }
+.cart__empty { margin-top: 18px; color: var(--ink-soft); }
+.cart__list { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 14px; }
+.cart__list li { display: flex; align-items: center; gap: 12px; }
+.cart__name { flex: 1; min-width: 0; font-weight: 600; font-size: 16px; line-height: 1.25; display: grid; gap: 2px; }
+.cart__name i { font-style: normal; font-weight: 400; color: var(--ink-soft); font-size: 15px; }
+.cart__sum { margin: 22px 0 0; padding-top: 16px; border-top: 2px solid var(--ink); display: grid; gap: 6px; }
+.cart__sum div { display: flex; justify-content: space-between; gap: 12px; }
+.cart__sum dt, .cart__sum dd { margin: 0; font-weight: 400; color: var(--ink-soft); }
+.cart__sum .is-total dt, .cart__sum .is-total dd { font-family: var(--poster); font-weight: 600; font-size: 26px; color: var(--ink); }
+.field { display: grid; gap: 6px; margin-top: 18px; font-weight: 600; font-size: 15px; }
+.field input, .field textarea { width: 100%; padding: 13px 16px; border: 2px solid var(--ink); border-radius: 16px; background: #fff; color: var(--ink); font: inherit; font-weight: 400; font-size: 16px; resize: vertical; }
+.field input::placeholder, .field textarea::placeholder { color: #8a6f66; }
+.cart__send { margin-top: 22px; width: 100%; }
+.cart__clear { display: block; margin: 14px auto 0; padding: 10px 16px; border: 0; background: none; color: var(--ink-soft); font: inherit; font-size: 15px; text-decoration: underline; cursor: pointer; }
+.dishes__notes { margin-top: 64px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.dishes__notes p { padding: 20px 22px; border: 2px dashed var(--ink); border-radius: 24px; font-family: var(--script); font-size: 28px; line-height: 1.1; }
+.dishes__notes p b { display: block; font-family: var(--poster); font-size: 34px; color: var(--terracotta); }
+@media (min-width: 700px) { .dishes__list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 24px; } .dish__name { font-size: 18px; } }
+@media (min-width: 1080px) { .dishes__list { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 760px) { .sheet--cart .sheet__box { width: min(560px, 92vw); } .cart__body { padding: 36px 34px 38px; } }
 @media (prefers-reduced-motion: reduce) { .dish { animation: none; } }

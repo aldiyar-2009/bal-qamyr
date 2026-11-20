@@ -135,60 +135,60 @@
   ];
   /* c — категория, p — цена в тенге, img — файл из assets/img/menu (можно не указывать) */
   var MENU = [
-    { c: "porridge", p: 1090, img: "rice-porridge.jpg", ru: ["Рисовая каша с курагой", "Нежная рисовая каша на молоке со сливочным маслом и сладкой курагой."], kk: ["Өрік қағы қосылған күріш ботқасы", "Сүтке піскен, сары май мен тәтті өрік қағы қосылған жұмсақ күріш ботқасы."] },
-    { c: "porridge", p: 1090, img: "oat-porridge.jpg", ru: ["Овсяная каша", "Классическая овсянка на молоке со сливочным маслом."], kk: ["Сұлы ботқасы", "Сүтке піскен, сары май қосылған классикалық сұлы ботқасы."] },
+    { c: "porridge", p: 1090, img: "rice-porridge.webp", ru: ["Рисовая каша с курагой", "Нежная рисовая каша на молоке со сливочным маслом и сладкой курагой."], kk: ["Өрік қағы қосылған күріш ботқасы", "Сүтке піскен, сары май мен тәтті өрік қағы қосылған жұмсақ күріш ботқасы."] },
+    { c: "porridge", p: 1090, img: "oat-porridge.webp", ru: ["Овсяная каша", "Классическая овсянка на молоке со сливочным маслом."], kk: ["Сұлы ботқасы", "Сүтке піскен, сары май қосылған классикалық сұлы ботқасы."] },
     { c: "porridge", p: 1090, ru: ["Манная каша", "Воздушная манная каша на молоке со сливочным маслом."], kk: ["Ұнтақ жарма ботқасы", "Сүтке піскен, сары май қосылған үлпілдек ұнтақ жарма ботқасы."] },
     { c: "breakfast", p: 1880, ru: ["Восточный завтрак", "Яичница-глазунья, сытные говяжьи сосиски, свежие помидоры, брынза и хрустящие тосты."], kk: ["Шығыс таңғы асы", "Қуырылған жұмыртқа, сиыр етінен жасалған шұжықшалар, жас қызанақ, брынза және қытырлақ тост."] },
-    { c: "breakfast", p: 1880, img: "scottish.jpg", ru: ["Шотландский завтрак", "Глазунья, обжаренные колбаски, белая фасоль в томатном соусе и румяные тосты."], kk: ["Шотланд таңғы асы", "Қуырылған жұмыртқа, қуырылған шұжықшалар, қызанақ тұздығындағы ақ бұршақ және қызарған тост."] },
+    { c: "breakfast", p: 1880, img: "scottish.webp", ru: ["Шотландский завтрак", "Глазунья, обжаренные колбаски, белая фасоль в томатном соусе и румяные тосты."], kk: ["Шотланд таңғы асы", "Қуырылған жұмыртқа, қуырылған шұжықшалар, қызанақ тұздығындағы ақ бұршақ және қызарған тост."] },
     { c: "breakfast", p: 1880, ru: ["Американский завтрак", "Яичница, куриный рулет и обжаренные картофельные дольки."], kk: ["Америка таңғы асы", "Қуырылған жұмыртқа, тауық рулеті және қуырылған картоп тілімдері."] },
     { c: "breakfast", p: 1880, ru: ["Деревенский завтрак", "Яичница, жареные картофельные дольки с луком, сочные мясные колбаски."], kk: ["Ауыл таңғы асы", "Қуырылған жұмыртқа, пияз қосып қуырылған картоп тілімдері, шырынды ет шұжықшалары."] },
     { c: "porridge", p: 1290, ru: ["Блинчики с Нутеллой и ягодами"], kk: ["Нутелла мен жидек қосылған құймақ"] },
 
     { c: "burger", p: 3050, ru: ["Хачапури"], kk: ["Хачапури"] },
-    { c: "burger", p: 2890, img: "burger.jpg", ru: ["Бургер (фри, соус)", "Говяжьи котлеты, хрустящие фри."], kk: ["Бургер (фри, тұздық)", "Сиыр етінен котлет, қытырлақ фри."] },
+    { c: "burger", p: 2890, img: "burger.webp", ru: ["Бургер (фри, соус)", "Говяжьи котлеты, хрустящие фри."], kk: ["Бургер (фри, тұздық)", "Сиыр етінен котлет, қытырлақ фри."] },
     { c: "pizza", p: 2690, ru: ["Маргарита", "Тонкое тесто, фирменный томатный соус, сыр моцарелла и свежие помидоры."], kk: ["Маргарита", "Жұқа қамыр, фирмалық қызанақ тұздығы, моцарелла және жас қызанақ."] },
-    { c: "pizza", p: 3050, img: "pizza-4-seasons.jpg", ru: ["4 сезона", "Четыре вкуса: грибы, куриное филе, говяжья ветчина и помидоры под сыром моцарелла."], kk: ["4 маусым", "Төрт дәм: саңырауқ, тауық филесі, сиыр ветчинасы және моцарелла астындағы қызанақ."] },
-    { c: "pizza", p: 3050, img: "pizza-pepperoni.jpg", ru: ["Пепперони", "Томатный соус, тягучая моцарелла и пикантная говяжья колбаса пепперони."], kk: ["Пепперони", "Қызанақ тұздығы, созылмалы моцарелла және сиыр етінен жасалған ащы пепперони шұжығы."] },
-    { c: "pizza", p: 3050, img: "pizza-cheese.jpg", ru: ["Сырный ассорти"], kk: ["Ірімшік ассортиі"] },
+    { c: "pizza", p: 3050, img: "pizza-4-seasons.webp", ru: ["4 сезона", "Четыре вкуса: грибы, куриное филе, говяжья ветчина и помидоры под сыром моцарелла."], kk: ["4 маусым", "Төрт дәм: саңырауқ, тауық филесі, сиыр ветчинасы және моцарелла астындағы қызанақ."] },
+    { c: "pizza", p: 3050, img: "pizza-pepperoni.webp", ru: ["Пепперони", "Томатный соус, тягучая моцарелла и пикантная говяжья колбаса пепперони."], kk: ["Пепперони", "Қызанақ тұздығы, созылмалы моцарелла және сиыр етінен жасалған ащы пепперони шұжығы."] },
+    { c: "pizza", p: 3050, img: "pizza-cheese.webp", ru: ["Сырный ассорти"], kk: ["Ірімшік ассортиі"] },
     { c: "hot", p: 3050, ru: ["Курица с грибами"], kk: ["Тауық пен саңырауқ"] },
 
     { c: "hot", p: 2690, ru: ["Колбаски на гриле", "Куриные, говяжьи, бараньи, конина."], kk: ["Грильдегі шұжықшалар", "Тауық, сиыр, қой, жылқы еті."] },
     { c: "hot", p: 3690, ru: ["Форель с овощами"], kk: ["Көкөніс қосылған форель"] },
     { c: "hot", p: 2990, ru: ["Казан кебаб (баранина)", "Томленая баранина с обжаренным молодым картофелем и ароматными восточными специями."], kk: ["Қазан кебаб (қой еті)", "Қуырылған жас картоп пен хош иісті шығыс дәмдеуіштері қосылған бұқтырылған қой еті."] },
-    { c: "hot", p: 2990, img: "kazan-kebab.jpg", ru: ["Казан кебаб (говядина)", "Сочные кусочки говядины с обжаренным золотистым картофелем и луком."], kk: ["Қазан кебаб (сиыр еті)", "Алтын түсті қуырылған картоп пен пияз қосылған шырынды сиыр еті."] },
+    { c: "hot", p: 2990, img: "kazan-kebab.webp", ru: ["Казан кебаб (говядина)", "Сочные кусочки говядины с обжаренным золотистым картофелем и луком."], kk: ["Қазан кебаб (сиыр еті)", "Алтын түсті қуырылған картоп пен пияз қосылған шырынды сиыр еті."] },
     { c: "hot", p: 2990, ru: ["Картофель с мясом по-деревенски"], kk: ["Ауылша ет қосылған картоп"] },
     { c: "hot", p: 3190, ru: ["Тай куырдак"], kk: ["Тай қуырдақ"] },
 
     { c: "salad", p: 1990, ru: ["Малибу", "Куриное филе, сладкая кукуруза, сыр, свежие помидоры и огурцы с легкой заправкой."], kk: ["Малибу", "Тауық филесі, тәтті жүгері, ірімшік, жас қызанақ пен қияр, жеңіл тұздық."] },
-    { c: "salad", p: 2190, img: "eggplant.jpg", ru: ["Хрустящие баклажаны", "Обжаренные до хруста баклажаны, свежие помидоры, кинза и фирменный кисло-сладкий соус."], kk: ["Қытырлақ баялды", "Қытырлағанша қуырылған баялды, жас қызанақ, кинза және фирмалық қышқыл-тәтті тұздық."] },
-    { c: "salad", p: 2090, img: "caesar.jpg", ru: ["Цезарь с курицей"], kk: ["Тауық еті қосылған «Цезарь»"] },
+    { c: "salad", p: 2190, img: "eggplant.webp", ru: ["Хрустящие баклажаны", "Обжаренные до хруста баклажаны, свежие помидоры, кинза и фирменный кисло-сладкий соус."], kk: ["Қытырлақ баялды", "Қытырлағанша қуырылған баялды, жас қызанақ, кинза және фирмалық қышқыл-тәтті тұздық."] },
+    { c: "salad", p: 2090, img: "caesar.webp", ru: ["Цезарь с курицей"], kk: ["Тауық еті қосылған «Цезарь»"] },
     { c: "salad", p: 1590, ru: ["Ачичук", "Освежающий салат к горячему из тонко нарезанных помидоров, сладкого лука и базилика."], kk: ["Ачичук", "Жұқа туралған қызанақ, тәтті пияз және базиликтен жасалған сергітетін салат."] },
-    { c: "salad", p: 1990, img: "greek.jpg", ru: ["Греческий"], kk: ["Грек салаты"] },
+    { c: "salad", p: 1990, img: "greek.webp", ru: ["Греческий"], kk: ["Грек салаты"] },
     { c: "salad", p: 1890, ru: ["Оливье"], kk: ["Оливье"] },
 
-    { c: "set", p: 1290, img: "chicken-mushroom.jpg", ru: ["Курица с грибами", "Сочное куриное филе и шампиньоны в нежном сливочном соусе. Гарнир: рассыпчатый белый рис."], kk: ["Саңырауқ қосылған тауық", "Нәзік кілегей тұздығындағы шырынды тауық филесі мен шампиньон. Гарнир: үгілмелі ақ күріш."] },
+    { c: "set", p: 1290, img: "chicken-mushroom.webp", ru: ["Курица с грибами", "Сочное куриное филе и шампиньоны в нежном сливочном соусе. Гарнир: рассыпчатый белый рис."], kk: ["Саңырауқ қосылған тауық", "Нәзік кілегей тұздығындағы шырынды тауық филесі мен шампиньон. Гарнир: үгілмелі ақ күріш."] },
     { c: "set", p: 1290, ru: ["Курица терияки", "Кусочки куриного филе, обжаренные в традиционном сладко-соленом соусе терияки с кунжутом. Гарнир: ароматный отварной рис."], kk: ["Терияки тауығы", "Күнжіт қосылған тәтті-тұзды терияки тұздығында қуырылған тауық филесі. Гарнир: хош иісті күріш."] },
     { c: "set", p: 1290, ru: ["Судак с рисом", "Филе судака (запеченное) с легким лимонно-масляным соусом. Гарнир: белый рис со свежей зеленью."], kk: ["Күріш қосылған көксерке", "Жеңіл лимон-май тұздығы қосылған пісірілген көксерке филесі. Гарнир: аскөк қосылған ақ күріш."] },
     { c: "set", p: 1290, ru: ["Манты с тыквой", "Тонкое тесто, начинка из мясного фарша и сочной сладкой тыквы."], kk: ["Асқабақ қосылған мәнті", "Жұқа қамыр, ет фаршы мен шырынды тәтті асқабақ."] },
-    { c: "set", p: 1290, img: "manty-beef.jpg", ru: ["Манты с говядиной", "Тонкое домашнее тесто, начинка из фарша (говядина) с луком и специями."], kk: ["Сиыр еті қосылған мәнті", "Жұқа үй қамыры, пияз бен дәмдеуіш қосылған сиыр етінің фаршы."] },
+    { c: "set", p: 1290, img: "manty-beef.webp", ru: ["Манты с говядиной", "Тонкое домашнее тесто, начинка из фарша (говядина) с луком и специями."], kk: ["Сиыр еті қосылған мәнті", "Жұқа үй қамыры, пияз бен дәмдеуіш қосылған сиыр етінің фаршы."] },
     { c: "set", p: 1290, ru: ["Бифштекс"], kk: ["Бифштекс"] },
     { c: "set", p: 1290, ru: ["Гуляш с пюре", "Нежные кусочки говядины, тушенные в густом томатно-овощном соусе. Гарнир: воздушное картофельное пюре."], kk: ["Езбе қосылған гуляш", "Қою қызанақ-көкөніс тұздығында бұқтырылған жұмсақ сиыр еті. Гарнир: үлпілдек картоп езбесі."] },
-    { c: "set", p: 1290, img: "bolognese.jpg", ru: ["Паста Болоньезе"], kk: ["Болоньезе пастасы"] },
+    { c: "set", p: 1290, img: "bolognese.webp", ru: ["Паста Болоньезе"], kk: ["Болоньезе пастасы"] },
     { c: "set", p: 1290, ru: ["Паста Альфредо"], kk: ["Альфредо пастасы"] },
     { c: "set", p: 1290, ru: ["Тефтели в томатном соусе"], kk: ["Қызанақ тұздығындағы тефтели"] },
 
-    { c: "soup", p: 1290, img: "chicken-soup.jpg", ru: ["Куриный суп"], kk: ["Тауық сорпасы"] },
+    { c: "soup", p: 1290, img: "chicken-soup.webp", ru: ["Куриный суп"], kk: ["Тауық сорпасы"] },
     { c: "soup", p: 1290, ru: ["Пельмени по-домашнему"], kk: ["Үй тұшпарасы"] },
     { c: "soup", p: 1290, ru: ["Тефтели по-домашнему"], kk: ["Үй тефтелиі"] },
-    { c: "soup", p: 1290, img: "solyanka.jpg", ru: ["Солянка"], kk: ["Солянка"] },
-    { c: "soup", p: 1290, img: "pumpkin-soup.jpg", ru: ["Тыквенный суп"], kk: ["Асқабақ көжесі"] },
-    { c: "soup", p: 1290, img: "lentil-soup.jpg", ru: ["Чечевичный суп"], kk: ["Жасымық көжесі"] },
-    { c: "soup", p: 1290, img: "ramen-beef.jpg", ru: ["Рамен с говядиной"], kk: ["Сиыр еті қосылған рамен"] },
-    { c: "soup", p: 1290, img: "ramen-chicken.jpg", ru: ["Рамен с курицей"], kk: ["Тауық еті қосылған рамен"] },
+    { c: "soup", p: 1290, img: "solyanka.webp", ru: ["Солянка"], kk: ["Солянка"] },
+    { c: "soup", p: 1290, img: "pumpkin-soup.webp", ru: ["Тыквенный суп"], kk: ["Асқабақ көжесі"] },
+    { c: "soup", p: 1290, img: "lentil-soup.webp", ru: ["Чечевичный суп"], kk: ["Жасымық көжесі"] },
+    { c: "soup", p: 1290, img: "ramen-beef.webp", ru: ["Рамен с говядиной"], kk: ["Сиыр еті қосылған рамен"] },
+    { c: "soup", p: 1290, img: "ramen-chicken.webp", ru: ["Рамен с курицей"], kk: ["Тауық еті қосылған рамен"] },
 
     { c: "snack", p: 1990, ru: ["Крылышки (8 шт)"], kk: ["Қанатшалар (8 дана)"] },
-    { c: "snack", p: 1890, img: "nuggets.jpg", ru: ["Наггетсы (8 шт)"], kk: ["Наггетс (8 дана)"] },
-    { c: "side", p: 790, img: "fries.jpg", ru: ["Фри"], kk: ["Фри"] },
+    { c: "snack", p: 1890, img: "nuggets.webp", ru: ["Наггетсы (8 шт)"], kk: ["Наггетс (8 дана)"] },
+    { c: "side", p: 790, img: "fries.webp", ru: ["Фри"], kk: ["Фри"] },
     { c: "side", p: 790, ru: ["Дольки"], kk: ["Картоп тілімдері"] },
     { c: "side", p: 790, ru: ["Рис"], kk: ["Күріш"] }
   ];
@@ -273,17 +273,44 @@
     if (window.scrollY > top) window.scrollTo({ top: top, behavior: "smooth" });
   });
 
-  /* ---------- меню кафе ---------- */
+  /* ---------- меню кафе: карточки, корзина, заказ в WhatsApp ---------- */
+  /* Номер WhatsApp кафе: только цифры с кодом страны, например "77011234567".
+     Пока номер пустой, WhatsApp откроется с готовым текстом и предложит выбрать чат. */
+  var WHATSAPP = "";
+  var SERVICE = 0.1; /* обслуживание 10% */
+  var MT = {
+    ru: { add: "Добавить", inCart: "В корзине", cart: "Корзина", empty: "Корзина пока пуста. Нажмите «+» у блюда.", sum: "Блюда", service: "Обслуживание 10%", total: "Итого",
+      table: "Номер стола", tablePh: "например, 5", note: "Комментарий к заказу", notePh: "Аллергии, без лука, поострее, подать позже…",
+      send: "Отправить в WhatsApp", clear: "Очистить", hello: "Здравствуйте! Заказ с сайта Bal Qamyr", tableMsg: "Стол", noteMsg: "Комментарий", pcs: "шт", close: "Закрыть", less: "Меньше", more: "Больше", open: "Открыть" },
+    kk: { add: "Қосу", inCart: "Себетте", cart: "Себет", empty: "Себет әзірге бос. Тағамның жанындағы «+» белгісін басыңыз.", sum: "Тағамдар", service: "Қызмет көрсету 10%", total: "Барлығы",
+      table: "Үстел нөмірі", tablePh: "мысалы, 5", note: "Тапсырысқа түсініктеме", notePh: "Аллергия, пиязсыз, ащырақ, кейінірек әкелу…",
+      send: "WhatsApp-қа жіберу", clear: "Тазалау", hello: "Сәлеметсіз бе! Bal Qamyr сайтынан тапсырыс", tableMsg: "Үстел", noteMsg: "Түсініктеме", pcs: "дана", close: "Жабу", less: "Азайту", more: "Көбейту", open: "Ашу" }
+  };
   var dishes = $("#dishes"), dishFilters = $("#dish-filters"), dishCat = "all";
+  var dishSheet = $("#dish-sheet"), cartSheet = $("#cart-sheet"), cartBar = $("#cart-bar");
+  var cart = {}, order = { table: "", note: "" }, openDish = null, openQty = 1;
+  try { cart = JSON.parse(localStorage.getItem("bq-cart") || "{}") || {}; } catch (e) { cart = {}; }
+  function saveCart() { try { localStorage.setItem("bq-cart", JSON.stringify(cart)); } catch (e) {} }
+  function dishKey(d) { return d.ru[0] + "|" + d.p; }
+  function dishByKey(k) { return MENU.filter(function (d) { return dishKey(d) === k; })[0]; }
+  Object.keys(cart).forEach(function (k) { if (!dishByKey(k) || !(cart[k] > 0)) delete cart[k]; });
   try { var dh = location.hash.replace("#", ""); if (MENU_CATS.some(function (c) { return c.id === dh; })) dishCat = dh; } catch (e) {}
-  function price(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " ₸"; }
+  function price(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " ₸"; }
+  function cartCount() { return Object.keys(cart).reduce(function (s, k) { return s + cart[k]; }, 0); }
+  function cartSum() { return Object.keys(cart).reduce(function (s, k) { return s + cart[k] * dishByKey(k).p; }, 0); }
+  function picHTML(d) {
+    return d.img ? '<img src="assets/img/menu/' + d.img + '" alt="" loading="lazy">'
+                 : '<img class="is-logo" src="assets/img/logo.png" alt="" loading="lazy">';
+  }
   function dishHTML(d, i) {
-    var t = d[lang];
-    return '<li class="dish' + (d.img ? "" : " dish--text") + '" style="--d:' + (Math.min(i, 8) * 0.04).toFixed(2) + 's">' +
-      (d.img ? '<span class="dish__img"><img src="assets/img/menu/' + d.img + '" alt="" loading="lazy"></span>' : "") +
-      '<span class="dish__body"><span class="dish__name">' + esc(t[0]) + "</span>" +
-      (t[1] ? '<span class="dish__desc">' + esc(t[1]) + "</span>" : "") +
-      '<b class="dish__price">' + price(d.p) + "</b></span></li>";
+    var t = d[lang], k = dishKey(d), q = cart[k] || 0, n = MENU.indexOf(d);
+    return '<li class="dish" style="--d:' + (Math.min(i, 8) * 0.04).toFixed(2) + 's">' +
+      '<button class="dish__open" type="button" data-dish="' + n + '" aria-label="' + MT[lang].open + ": " + esc(t[0]) + '">' +
+      '<span class="dish__pic">' + picHTML(d) + "</span>" +
+      '<b class="dish__price">' + price(d.p) + "</b>" +
+      '<span class="dish__name">' + esc(t[0]) + "</span>" +
+      (t[1] ? '<span class="dish__desc">' + esc(t[1]) + "</span>" : "") + "</button>" +
+      '<button class="dish__add' + (q ? " is-on" : "") + '" type="button" data-add="' + n + '" aria-label="' + MT[lang].add + ": " + esc(t[0]) + '">' + (q ? q : "+") + "</button></li>";
   }
   function renderDishFilters() {
     if (!dishFilters) return;
@@ -297,6 +324,79 @@
       var list = MENU.filter(function (d) { return d.c === c.id; });
       return '<section class="dishes__group"><h2 class="dishes__title">' + c[lang] + '</h2><ul class="dishes__list">' + list.map(dishHTML).join("") + "</ul></section>";
     }).join("");
+    renderCartBar();
+    if (dishSheet && dishSheet.classList.contains("is-open")) renderDishSheet();
+    if (cartSheet && cartSheet.classList.contains("is-open")) renderCart();
+  }
+  function renderCartBar() {
+    if (!cartBar) return;
+    var n = cartCount();
+    cartBar.hidden = !n;
+    cartBar.innerHTML = "<span>" + MT[lang].cart + " · " + n + "</span><b>" + price(cartSum()) + "</b>";
+  }
+  function stepper(k, q) {
+    return '<span class="qty"><button type="button" data-step="-1" data-key="' + esc(k) + '" aria-label="' + MT[lang].less + '">−</button><b>' + q +
+      '</b><button type="button" data-step="1" data-key="' + esc(k) + '" aria-label="' + MT[lang].more + '">+</button></span>';
+  }
+  function renderDishSheet() {
+    var d = openDish, t = d[lang];
+    $(".sheet__img", dishSheet).innerHTML = '<span class="dish__pic dish__pic--big">' + picHTML(d) + "</span>";
+    $(".sheet__body", dishSheet).innerHTML = '<h2 id="dish-title">' + esc(t[0]) + "</h2>" +
+      '<div class="sheet__tags"><span>' + price(d.p) + "</span></div>" + (t[1] ? "<p>" + esc(t[1]) + "</p>" : "") +
+      '<div class="dish-buy"><span class="qty qty--big"><button type="button" data-oq="-1" aria-label="' + MT[lang].less + '">−</button><b>' + openQty +
+      '</b><button type="button" data-oq="1" aria-label="' + MT[lang].more + '">+</button></span>' +
+      '<button class="btn btn--orange" type="button" data-put>' + MT[lang].add + " · " + price(d.p * openQty) + "</button></div>";
+    $(".sheet__close", dishSheet).setAttribute("aria-label", MT[lang].close);
+  }
+  function renderCart() {
+    var u = MT[lang], keys = Object.keys(cart), box = $(".cart__body", cartSheet), sum = cartSum();
+    $(".sheet__close", cartSheet).setAttribute("aria-label", u.close);
+    if (!keys.length) { box.innerHTML = '<h2 id="cart-title">' + u.cart + '</h2><p class="cart__empty">' + u.empty + "</p>"; return; }
+    box.innerHTML = '<h2 id="cart-title">' + u.cart + '</h2><ul class="cart__list">' + keys.map(function (k) {
+      var d = dishByKey(k);
+      return '<li><span class="dish__pic dish__pic--mini">' + picHTML(d) + '</span><span class="cart__name">' + esc(d[lang][0]) + "<i>" + price(d.p * cart[k]) + "</i></span>" + stepper(k, cart[k]) + "</li>";
+    }).join("") + "</ul>" +
+      '<dl class="cart__sum"><div><dt>' + u.sum + "</dt><dd>" + price(sum) + "</dd></div><div><dt>" + u.service + "</dt><dd>" + price(sum * SERVICE) +
+      '</dd></div><div class="is-total"><dt>' + u.total + "</dt><dd>" + price(sum * (1 + SERVICE)) + "</dd></div></dl>" +
+      '<label class="field"><span>' + u.table + '</span><input id="cart-table" type="text" inputmode="numeric" maxlength="12" autocomplete="off" placeholder="' + u.tablePh + '" value="' + esc(order.table) + '"></label>' +
+      '<label class="field"><span>' + u.note + '</span><textarea id="cart-note" rows="3" maxlength="500" placeholder="' + u.notePh + '">' + esc(order.note) + "</textarea></label>" +
+      '<button class="btn btn--orange cart__send" type="button" data-send><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.500a8.500 8.500 0 01-12.700 7.400L3 20.500l1.700-5A8.500 8.500 0 1121 11.500z"/></svg>' + u.send + "</button>" +
+      '<button class="cart__clear" type="button" data-clear>' + u.clear + "</button>";
+  }
+  var menuFocus = null;
+  function openM(el) { menuFocus = document.activeElement; el.classList.add("is-open"); body.classList.add("is-locked"); $(".sheet__box", el).scrollTop = 0; $(".sheet__close", el).focus(); }
+  function closeM() {
+    [dishSheet, cartSheet].forEach(function (el) { if (el) el.classList.remove("is-open"); });
+    body.classList.remove("is-locked"); if (menuFocus) { menuFocus.focus(); menuFocus = null; }
+  }
+  function setQty(k, q) { if (q > 0) cart[k] = Math.min(q, 99); else delete cart[k]; saveCart(); renderDishes(); }
+  function orderText() {
+    var u = MT[lang], sum = cartSum(), lines = [u.hello];
+    if (order.table.trim()) lines.push(u.tableMsg + ": " + order.table.trim());
+    lines.push("");
+    Object.keys(cart).forEach(function (k, i) { var d = dishByKey(k); lines.push((i + 1) + ". " + d[lang][0] + " — " + cart[k] + " " + u.pcs + " × " + price(d.p) + " = " + price(d.p * cart[k])); });
+    lines.push("", u.sum + ": " + price(sum), u.service + ": " + price(sum * SERVICE), u.total + ": " + price(sum * (1 + SERVICE)));
+    if (order.note.trim()) lines.push("", u.noteMsg + ": " + order.note.trim());
+    return lines.join("\n").replace(/ /g, " ");
+  }
+  if (dishes) {
+    document.addEventListener("click", function (e) {
+      var el;
+      if ((el = e.target.closest("[data-add]"))) { var d = MENU[+el.dataset.add], k = dishKey(d); setQty(k, (cart[k] || 0) + 1); return; }
+      if ((el = e.target.closest("[data-dish]"))) { openDish = MENU[+el.dataset.dish]; openQty = 1; renderDishSheet(); openM(dishSheet); return; }
+      if ((el = e.target.closest("[data-oq]"))) { openQty = Math.max(1, Math.min(99, openQty + +el.dataset.oq)); renderDishSheet(); return; }
+      if (e.target.closest("[data-put]")) { var kk = dishKey(openDish); closeM(); setQty(kk, (cart[kk] || 0) + openQty); return; }
+      if ((el = e.target.closest("[data-step]"))) { setQty(el.dataset.key, (cart[el.dataset.key] || 0) + +el.dataset.step); return; }
+      if (e.target.closest("#cart-bar")) { renderCart(); openM(cartSheet); return; }
+      if (e.target.closest("[data-clear]")) { cart = {}; saveCart(); renderDishes(); return; }
+      if (e.target.closest("[data-send]")) { window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(orderText()), "_blank", "noopener"); return; }
+      if (e.target.closest("[data-mclose]")) closeM();
+    });
+    document.addEventListener("input", function (e) {
+      if (e.target.id === "cart-table") order.table = e.target.value;
+      if (e.target.id === "cart-note") order.note = e.target.value;
+    });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeM(); });
   }
   if (dishFilters) dishFilters.addEventListener("click", function (e) {
     var b = e.target.closest(".chip"); if (!b) return;

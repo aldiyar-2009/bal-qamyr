@@ -47,7 +47,7 @@
   <div class="wrap">
     <p class="section-note" data-kk="тойымды әрі дәмді">сытно и вкусно</p>
     <h1 data-kk="Мәзір">Меню</h1>
-    <p class="lead" data-kk="Таңғы ас, сорпа, ыстық тағамдар мен пицца — бағасымен бірге.">Завтраки, первые блюда, горячее и пицца — сразу с ценами.</p>
+    <p class="lead" data-kk="Тағамды басып қараңыз, тапсырыс жинап, үстел басынан WhatsApp-қа жіберіңіз.">Нажмите на блюдо, чтобы рассмотреть его, соберите заказ и отправьте в WhatsApp прямо из-за стола.</p>
   </div>
 </section>
 <div class="filters"><div class="filters__rail" id="dish-filters" role="group" aria-label="Категории меню"></div></div>
@@ -83,6 +83,22 @@
   </div></div>
 </footer>
 
+<button class="cart-bar" id="cart-bar" type="button" hidden></button>
+<div class="sheet" id="dish-sheet" role="dialog" aria-modal="true" aria-labelledby="dish-title">
+  <button class="sheet__bg" type="button" data-mclose tabindex="-1" aria-label="Закрыть"></button>
+  <div class="sheet__box">
+    <button class="sheet__close" type="button" data-mclose aria-label="Закрыть">×</button>
+    <div class="sheet__img"></div>
+    <div class="sheet__body"></div>
+  </div>
+</div>
+<div class="sheet sheet--cart" id="cart-sheet" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+  <button class="sheet__bg" type="button" data-mclose tabindex="-1" aria-label="Закрыть"></button>
+  <div class="sheet__box">
+    <button class="sheet__close" type="button" data-mclose aria-label="Закрыть">×</button>
+    <div class="cart__body"></div>
+  </div>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>
