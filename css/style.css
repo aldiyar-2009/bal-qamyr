@@ -494,3 +494,6 @@ h1, h2, h3, p { margin: 0; }
 @media (min-width: 1080px) { .dishes__list { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (min-width: 760px) { .sheet--cart .sheet__box { width: min(560px, 92vw); } .cart__body { padding: 36px 34px 38px; } }
 @media (prefers-reduced-motion: reduce) { .dish { animation: none; } }
+.dishes__disclaimer { margin-top: 56px; font-size: 14px; line-height: 1.45; color: var(--ink-soft); max-width: 44em; }
+.dish__pic img { width: 100%; height: 100%; }
+.dish__pic img.is-logo { width: 46%; height: 46%; }
