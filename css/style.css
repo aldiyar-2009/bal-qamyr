@@ -440,3 +440,29 @@ h1, h2, h3, p { margin: 0; }
   .sheet__img { background: var(--cream); align-items: center; }
   .sheet__img img { height: auto; max-height: 80vh; object-fit: contain; }
 }
+
+/* ---------- меню кафе ---------- */
+.dishes { padding: 30px 0 90px; }
+.dishes__group + .dishes__group { margin-top: 46px; }
+.dishes__title { font-family: var(--poster); font-weight: 700; text-transform: uppercase; font-size: clamp(34px, 8vw, 56px); line-height: 1; color: var(--terracotta); padding-bottom: 12px; border-bottom: 2px solid var(--ink); }
+.dishes__list { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 430px), 1fr)); gap: 14px 22px; }
+.dish { display: grid; grid-template-columns: 92px 1fr auto; align-items: center; gap: 14px; padding: 12px 16px 12px 12px; background: var(--paper); border: 2px solid var(--ink); border-radius: 22px; box-shadow: 0 4px 0 var(--ink); animation: pop .5s var(--ease) both; animation-delay: var(--d, 0s); }
+.dish__img { width: 92px; height: 92px; border-radius: 50%; overflow: hidden; border: 3px solid var(--terracotta); padding: 3px; background: var(--paper); }
+.dish__img img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.dish__img--none { border-style: dashed; border-color: var(--line); }
+.dish__img--none img { opacity: .5; }
+.dish__body { display: grid; gap: 4px; min-width: 0; }
+.dish__name { font-family: var(--poster); font-weight: 600; font-size: 21px; line-height: 1.12; text-transform: uppercase; }
+.dish__desc { font-size: 14px; line-height: 1.38; color: var(--ink-soft); }
+.dish__price { font-family: var(--poster); font-weight: 600; font-size: 19px; white-space: nowrap; padding: 5px 13px; border-radius: 999px; background: var(--yolk); }
+.dishes__notes { margin-top: 44px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.dishes__notes p { padding: 18px 20px; border: 2px dashed var(--ink); border-radius: 22px; font-family: var(--script); font-size: 27px; line-height: 1.1; }
+.dishes__notes p b { display: block; font-family: var(--poster); font-size: 30px; color: var(--terracotta); }
+@media (max-width: 599px) {
+  .dish { grid-template-columns: 70px 1fr; padding: 10px 12px 12px 10px; border-radius: 18px; }
+  .dish__img { width: 70px; height: 70px; }
+  .dish__name { font-size: 18px; }
+  .dish__desc { font-size: 13px; }
+  .dish__price { grid-column: 2; justify-self: start; font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) { .dish { animation: none; } }
